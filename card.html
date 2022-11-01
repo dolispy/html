@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Card</title>
+</head>
+<style>
+    body{
+        font-family: 'Courier New', Courier, monospace, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+
+    div{
+        border: 1px solid black;
+        border-radius: 12px;
+        width: 270px;
+        /*using width : 300px makes the list follow the same format as Airtable except the box will be too wide*/
+        padding: 10px;
+        background-color: #d0f0fd;
+    }
+    
+    .interface{
+        border-bottom: 1px dashed black;
+    }
+    .pro{
+        font-size: 50px;
+        
+    }
+    .plan{
+        font-size: 12px;
+    }
+</style>
+<body>
+    <section>
+  <div> 
+    <p style="background-color:#2d7ff9; color: white;" >Most Popular</p>
+    <hr>
+    <h3>Pro</h3>
+    <p>For teams and departments<br>
+        who need to build<br>
+        connected apps to power<br>
+        their most important<br>
+         processes</p>
+    <br>
+    <!-- using a table as I tried the below earlier but since we can't use css/flex, I can't replicate it directly
+    <p><span class="pro"><b>$20</b></span> <span class="plan">per seat /month
+    <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;billed annually</span>
+    </p>
+    <p><b>$24</b> billed monthly</p> <-->
+    <table>
+        <td class="pro"><b>$20</b></td>
+        <td class="plan">&nbsp; per seat /month<br>
+        &nbsp;&nbsp;billed annually</td>
+    </table>
+    <p><b>$24</b> billed monthly</p>
+    <br>
+    <button>Try for free</button>
+    <br>
+    <p>Everything in <b>Plus,</b> plus:</p>
+ <!--not styling the button or the checklist since its just pure html..I know we already have some css files :) -->
+    <ul>
+        <li>10 <span class="interface">extensions</span> per base</li>
+        <li>7 sync integrations including <br>Jira Cloud</li>
+        <li>50,000 records per base</li>
+        <li>20GB of attachments per<br>base</li>
+        <li>Gantt & Timeline Views</li>
+        <li>Granular interface <br>permissions</li>
+        <li>1-year revision & snapshot <br>history</li>
+        <li>Personal & locked views</li>
+        <li>Field & table editing <br>permissions</li>
+    </ul>
+    </div>
+    </section> 
+</body>
+</html>
