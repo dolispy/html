@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    text-align: left;
+}
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.first-section{
+    border: 1px solid black;
+    border-radius: 12px;
+    
+}
+h1{
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}  
+.ben{
+    color: green;
+    font-size: 14px;
+}
+span{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.second-section{
+    border: 1px dotted black;
+        border-radius: 12px;
+        width: 100%;
+}
+
+.reason{
+    font-size: 14px;
+    color: red;
+    
+}
+
+.third-section{
+    border: 1px black;
+    border-style: dotted solid double dashed;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.third{
+    font-size: 14px;
+    color: blue;
+}
