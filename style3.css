@@ -1,0 +1,53 @@
+body{
+    font-family: 'Courier New', Courier, monospace, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.container{
+    border: 1px solid;
+    border-radius: 12px;
+    width: 100%;
+    /*using width : 300px makes the list follow the same format as Airtable except the box will be too wide*/
+    padding: 20px;
+    background-color: white;
+}
+.wrapper-div{
+    border: 1px solid black;
+    width: 500px;
+    padding-left: 20px;
+    background-color: rgb(22, 65, 50);
+    color: whitesmoke;
+  }
+  .wrapper-div1{
+    border: 1px solid black;
+    width: 500px;
+    padding-left: 20px;
+    background-color: #1bd899ee;
+    color: whitesmoke;
+    opacity: 5px;
+  }
+main{
+    background-color: aqua;
+}
+button{
+
+        background-color: yellowgreen;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+}
+
+
+span{
+    font-size: 15px;
+    color: whitesmoke;
+}
+.plan{
+    font-size: 12px;
+}
