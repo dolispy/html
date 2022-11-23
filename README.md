@@ -1,2 +1,3 @@
 Stuttern1
-# html
+
+Various html assignments done during my learning at Stuttern
