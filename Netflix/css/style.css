@@ -1,0 +1,508 @@
+/*
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+p.nf-content {
+    width: 505px;
+    font-size: 26px;
+}
+*/
+body{
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url(/fonts/NetflixSans-Bold.otf) format('otf')
+    url(/fonts/NetflixSans-Light.otf) format('otf')
+    url(/fonts/NetflixSans-Medium.otf) format('otf')
+    url(/fonts/NetflixSans-Regular.otf) format('otf')
+    ; 
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Netflix Sans','Helvetica Neue','Segoe UI','Roboto','Ubuntu','sans-serif'
+}
+.container .logo-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+    z-index: 1000000;
+}
+
+.container .logo-area img{
+    width: 13%;
+}
+
+.container .logo-area a{
+    color: white;
+    text-decoration: none;
+    background-color: #e50914;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+
+.first{
+    width: 100%;
+    height: 71vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first .fit{
+    width: 100%;
+    height: 692.594px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.first::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background:linear-gradient(to bottom, black, transparent);
+
+}
+
+.first::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    z-index: 1;
+    padding-bottom: 1px;
+    background:linear-gradient(to top, black, transparent);
+    border-bottom: 0.6rem solid #111;
+    
+}
+.first .unlimited{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.first .unlimited .fancy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.first .unlimited .fancy h2{
+    font-size: 3.125rem;
+    color: white;
+    letter-spacing: 2px;
+    width: 80%;
+}
+
+.first .unlimited .fancy h5{
+    font-size: 1.625rem;
+    color: white;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.first .unlimited .fancy p{
+    font: size 1.2rem; 
+    color: white;
+    font-weight: 500;
+    padding: 15px 0;
+    padding-bottom: 20px;
+}
+
+.first .unlimited .signup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.first .unlimited .signup input{
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    outline: none;
+    color: black;
+    border-radius: 2px;
+    padding: 10px 10px 0 0;
+    min-width: 400px;
+    height: 60px;
+    align-items: center;
+}
+
+.first .unlimited .signup a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    background: #e50914;
+    font-size: 1.625rem;
+    line-height: 60px;
+    min-width: 300px;
+    padding: 0 30px;
+}  
+
+.second{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 0.6rem solid #111;
+}
+
+.second .enjoy{
+    width: 40%;
+}
+
+.second .enjoy h1{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.second .enjoy p{
+    font-size: 1.7rem;
+    color: white;
+}
+
+.second .tv-container img{
+    max-width: 100%;
+    height: auto;
+    position: relative; 
+}
+.second .tv-container video{
+position: absolute;
+right: 16.2rem;
+top: 52rem;
+width: 24.5%;
+z-index: -1;
+}
+.third{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 0.6rem solid #111;
+}
+
+.third .enjoy{
+    width: 33%;
+}
+
+.third .enjoy h1{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.third .enjoy p{
+    font-size: 1.7rem;
+    color: white;
+}
+
+.third .tv-container img{
+    max-width: 70%;
+    position: relative;
+    background: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+    object-fit: cover;
+    opacity: 0.9;
+    
+}
+
+.third .small-box{
+    display: flex;
+    background: black;
+    border: 2px solid #111;
+    border-radius: 15px;
+    padding: 5px 15px;
+    left:17rem;
+    top: 94rem;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 300px;
+    position: absolute;
+}
+
+.third .small-box .one{
+    width: 25%
+
+}
+
+.third .small-box .two{
+    width: 12%;
+}
+
+.third .small-box .mini-head{
+    color: #fff;
+    font-size: .9em;
+    font-weight: 500;
+    letter-spacing: 0!important;
+    padding-left: 10px;
+    width: 150px;
+}
+
+.third .small-box .download{
+    color: #0071eb;
+    font-size: .75em;
+    font-weight: 400;
+    
+}
+
+
+.fourth{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 3rem 10rem;
+    border-bottom: 0.6rem solid #111;
+}
+
+.fourth .enjoy{
+    width: 33%;
+}
+
+.fourth .enjoy h1{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.fourth .enjoy p{
+    font-size: 1.7rem;
+    color: white;
+}
+
+.fifth{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 0.6rem solid #111;
+}
+
+.fifth .enjoy{
+    width: 33%;
+}
+
+.fifth .enjoy h1{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.fifth .enjoy p{
+    font-size: 1.7rem;
+    color: white;
+}
+
+.fifth .tv img{
+    max-width: 100%;
+    height: auto;
+}
+
+.faq{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.faq h1{
+    color: white;
+    font-size: 3rem;
+    padding: 3rem 0 4rem 0;
+}
+
+.faq .title{
+    background: #303030;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.plus{
+    width: 20px;
+    position: relative;
+}
+
+.plus::before, .plus::after{
+    content: "";
+    position: absolute;
+    width: 20px; 
+    height: 3px;
+    background: white;
+    top: 5px;
+
+}
+
+.plus::after{
+    transform: rotate(90deg);
+    transition: 0.5s linear;
+}
+
+.faq .list-text{
+    background: #303030;
+    line-height: 35px;
+    margin: 3px 0;
+    opacity: 0;
+    height: 0;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.list:target .list-text{
+    opacity: 1;
+    height: auto;
+    padding: 20px 30px;
+    margin: 0;
+    border-top: 2px solid black;
+    margin-bottom: 6px;
+}
+
+.list:target .plus::after{
+    transform: rotate(490deg);
+    
+ 
+}
+
+.box .unlimited{
+    margin: 4rem 0;
+}
+
+.box .unlimited .fancy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box{
+    border-bottom: 0.6rem solid #111;
+}
+
+.box .unlimited .fancy p{
+    font: size 1.2rem; 
+    color: white;
+    font-weight: 500;
+    padding: 15px 0;
+    padding-bottom: 20px;
+}
+
+.box .unlimited .signup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .unlimited .signup input{
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    outline: none;
+    color: black;
+    border-radius: 2px;
+    padding: 10px 10px 0 0;
+    min-width: 400px;
+    height: 60px;
+    align-items: center;
+}
+
+.box .unlimited .signup a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    background: #e50914;
+    font-size: 1.625rem;
+    line-height: 60px;
+    min-width: 300px;
+    padding: 0 30px;
+}  
+.footer{
+    border-bottom: 2px solid #ccc;
+}
+
+.footer  p{
+    color: #ccc;
+    display: block;
+    padding-left: 25rem;
+    padding-top: 1rem;
+}
+.footer .last-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 24rem;
+    padding: 1rem;
+    
+}
+
+.footer .last-one li{
+    padding: 7px 0;
+    margin-top: 5px;
+}
+.footer .last-one li a{
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer .last-one li a:hover{
+    border-bottom: 1px solid #ccc;
+}
+
+.footer .end{
+    padding-bottom: 2rem;
+}
