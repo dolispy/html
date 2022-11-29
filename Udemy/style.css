@@ -243,8 +243,7 @@
     width: 50px;
   }
   .udemy-python {
-    max-width: 60%;
-    padding: 1rem 0;
+    padding: 2rem 0;
   }
   
   .explore-python {
@@ -345,9 +344,14 @@
   .Bviews {
     margin: 2rem;
   }
-  p {
-    font-weight: 700;
-  }
+  
+ 
+.p {
+    font-size: 15.9px;
+    margin-bottom: 23px;
+    line-height: 21px;
+    
+}
 
 
 
@@ -384,7 +388,21 @@ input ~ .tab {
     margin: 1rem;
     padding: 1rem 2rem;
     border: 1px solid #d1d7dc;
+    font-weight: normal;
   }
+
+  .card-intro h4 {
+    font-size: 24px;
+    margin: 0 0 8px;
+
+}
+
+.card-intro p {
+    font-size: 15.9px;
+    width: 790px;
+    margin-bottom: 23px;
+    line-height: 21px;
+}
 
   .row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(-1 * var(--bs-gutter-y));margin-right:calc(-.5 * var(--bs-gutter-x));margin-left:calc(-.5 * var(--bs-gutter-x))
  
@@ -399,6 +417,40 @@ input ~ .tab {
     flex:0 0 auto;
     width:100%
 }
+
+.container{
+    width: 100vw;
+    
+}
+.icons{
+    display: flex;
+    background-color: #f7f9fa;
+    margin-top: 6.4rem;
+    margin-bottom: 2.4rem;
+    height: 150px;
+    align-items: center;
+}
+
+.icons i{
+  background: #d1d7dc;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  font-size: small;
+  justify-content: center;
+}
+
+
+.icons .col{
+display: flex;
+}
+.icons p{
+    font-weight: 50;
+    font-size: 0.7rem;
+    padding: 10px;
+}
   @media only screen and (min-width: 821px) {
     .headline-text {
       position: absolute;
@@ -406,6 +458,151 @@ input ~ .tab {
       left: 3rem;
     }
   }
+
+
+  /* CARDS */
+ .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.card-courses {
+    min-height: 55vh;
+    max-height: 50vh;
+}
+
+#data-image {
+    border: 1px solid rgba(0, 0, 0, 0.155);
+}
+
+.course-section-bottom .cards {
+    grid-column-gap: 15px;
+}
+
+.course-section-bottom .cards h4 {
+    font-size: 15.5px;
+}
+
+.course-section-bottom .cards img {
+    width: 235px;
+}
+
+.course-instructor,
+.people,
+del {
+    color: rgba(0, 0, 0, 0.595);
+}
+
+.responsive {
+    width: 90%;
+    height: auto;
+  }
+
+.course-instructor {
+    font-size: 12px;
+}
+
+.people {
+    font-size: 13.5px;
+}
+
+del {
+    font-size: 14.3px;
+}
+
+aside {
+    background: rgba(203, 211, 58, 0.537);
+    color: rgb(105, 59, 33);
+    width: 70px;
+    padding: 4px 4px;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.rated-amount {
+    font-size: 14px;
+    font-weight: bolder;
+    color: rgba(193, 109, 14, 0.954)
+}
+
+.checked,
+.half-checked,
+.fa-star-o {
+    color: rgba(244, 182, 28, 0.966);
+    font-size: 12px;
+}
+
+.card-content h4,
+.card-content p,
+.rating,
+.price {
+    margin-top: 2px;
+} 
+
+.topics-section {
+    background-color: #b7bed417;
+    min-height: 35vh;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.topics-categories {
+    display: flex;
+    flex-direction: space-between;
+    gap: 200px;
+}
+
+.topics-section .topics-content {
+    margin: 3.5em 0 0 1em;
+
+}
+
+.topics-content h4 {
+    font-size: 20px;
+}
+
+.topics-content h5 {
+    font-size: 15px;
+}
+
+.topics-content ul {
+    list-style: none;
+}
+
+.topics-section ul li a {
+    font-size: 10px;
+    font-weight: 200;
+    color: blue;
+}
+
+.topics-content p {
+    font-size: 10px;
+    color: #6a6f73;
+}
+
+.explore-cta {
+    width: 155.41px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid black;
+    font-weight: 600;
+    font-size: 13.2px;
+    padding: 0 12px;
+
+}
+
+.topics-content h5,
+.topics-section ul li,
+.topics-content .explore-cta {
+    margin-top: 1.2em;
+}
+
+.topics-content p {
+    margin-top: 10px;
+}
+
+
   
   @media only screen and (max-width: 1380px) {
     main {
@@ -419,67 +616,5 @@ input ~ .tab {
     }
   }
   
-  @media only screen and (max-width: 1080px) {
-    .business-link {
-      display: none;
-    }
-    .headline-text {
-      top: 1rem;
-      left: 1rem;
-    }
-  }
-  
-  @media only screen and (max-width: 980px) {
-    .headline-text {
-      width: 350px;
-    }
-  }
-  
-  @media only screen and (max-width: 920px) {
-    .teach-link {
-      display: none;
-    }
-  }
-  
-  @media only screen and (max-width: 820px) {
-    nav {
-      display: none;
-    }
-    .udemy-search {
-      display: none;
-    }
-    .log-in {
-      display: none;
-    }
-    .sign-up {
-      display: none;
-    }
-    .lang {
-      display: none;
-    }
-    header {
-      justify-content: space-between;
-    }
-    .menu-btn {
-      display: block;
-    }
-    .udemy-logo {
-      width: 90px;
-    }
-    .cart {
-      display: none;
-    }
-    .headline {
-      height: auto;
-    }
-    .udemy-lists {
-      flex-direction: column;
-    }
-    .headline-text {
-      position: static;
-      box-shadow: none;
-      width: 100vw;
-      padding: 0;
-    }
-  }
+
   
