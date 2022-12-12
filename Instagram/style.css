@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
 }
 
 *:focus{
@@ -17,6 +20,74 @@ body{
     position: relative;
     font-family: 'roboto', sans-serif;
 }
+
+nav{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: white;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.0);
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 12px 0 0 10px;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+span{
+    font-size: 15px;
+}
+
+a{
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 12px;
+    display: table;
+    width: 300px;
+    padding: 15px;
+    text-align: left;
+}
+
+i{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 5px;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: -70px;
+}
+
+a:hover{
+    background: white;
+}
+
+.settings{
+    position: fixed;
+    bottom: 0;
+}
+
+.responsive {
+    width: 90%;
+    height: auto;
+  }
 
 .navbar{
     position: fixed;
@@ -45,51 +116,27 @@ body{
     margin-top: 5px;
 }
 
-.search-box{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 25px;
-    background: #fafafa;
-    border: 1px solid #dfdfdf;
-    border-radius: 2px;
-    color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    text-transform: capitalize;
-}
-
-.search-box::placeholder{
-    color: rgba(0, 0, 0, 0.5);
-}
-
 .nav-items{
     height: 22px;
     position: relative;
-}
-
-.items{
-    height: 100%;
-    cursor: pointer;
-    margin: 0 10px;
-    display: inline-block;
+    margin-left: 7px;
+    top: -6px;
 }
 
 .user-profile{
     width: 22px;
     border-radius: 50%;
-    background-image: url(images/profile.jpg);
-    background-size: cover;
+   
 }
 
 /* Stories */
 
 .main{
     width: 100%;
-    padding: 40px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+ 
 }
 
 .wrapper{

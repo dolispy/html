@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Webpage Instagram Clone</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-wrapper">
-            <img src="images/logo.png" class="logo" alt="">
-            <input type="text" class="search-box" placeholder="search">
-            <div class="nav-items">
-                <img src="images/home.png" class="items" alt="home">
-                <img src="images/messenger.png" class="items" alt="messenger items">
-                <img src="images/add.png" class="items" alt="plus sign">
-                <img src="images/explore.png" class="items" alt="compass">
-                <img src="images/like.png" class="items" alt="like">
-                <div class="items user-profile"></div>
-            </div>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="#" class="logo"><img src="images/logo.png" alt="Instagram"></a></li>
+            <li><b><a href="#"><i class="fas fa-home"></i><span class="nav-item">Home</span></a></b></li>
+            <li><a href="#"><i class="fas fa-solid fa-magnifying-glass"></i><img src="images/" alt=""><span class="nav-item">Search</span></a></li>
+            <li><a href="#"><i class="fas fa-compass"></i><span class="nav-item">Explore</span></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook-messenger"></i><span class="nav-item">Messages</span></a></li>
+            <li><a href="#"><i class="fa-regular fa-heart"></i><span class="nav-item">Notifications</span></a></li>
+            <li><a href="#"><i class="fa-regular fa-square-plus"></i><span class="nav-item">Create</span></a></li>
+            <li><a href=""><img class="user-profile" src="images/profile.png"><span class="nav-items">Profile</span></a></li>
+            <li><a class="settings" href="#"><i class="fa-solid fa-bars"></i><span class="nav-item">More</span></a></li>
+        </ul>
     </nav>
+    
     
     <section class="main">
         <div class="wrapper">
@@ -40,7 +40,7 @@
                         <div class="profile-pic"><img src="images/damie.png" alt="woman"></div>
                         <p class="username">damie05</p>
                     </div>
-                    <div class="story-card">
+                    <div class="stoy-card">
                         <div class="profile-pic"><img src="images/ele.png" alt="woman"></div>
                         <p class="username">ele_ojo</p>
                     </div>
@@ -62,7 +62,7 @@
                     </div>
                     <img src="images/option.png" class="options" alt="">
                 </div>
-                <video class="post-image" autoplay loop >
+                <video class="post-image" autoplay loop muted>
                     <source src="images/krakstv.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video> 
@@ -241,7 +241,9 @@
                 </div>
                 <button class="button">Follow</button>
                 </div>
-                
+                <div>
+                    
+                </div>
             </div>
         </div>
     </section>
