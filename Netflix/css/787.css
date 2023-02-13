@@ -1,0 +1,73 @@
+
+@media screen and (max-width: 787px){
+    .container .logo-area{
+        padding:20px 50px;
+    }
+    
+    .container .logo-area img{
+        width: 20%;
+    }
+
+
+.first .unlimited .fancy h2{
+    font-size: 3.1rem;
+    letter-spacing: 1.5px;
+    width: 100%;
+}
+
+.first .unlimited .fancy h5{
+    font-size: 1.4rem;
+    padding: 0.8rem 0;
+}
+
+.first .unlimited .fancy p{
+    font-size: 1.1rem; 
+    padding: 13px 0;
+    padding-bottom: 70px;
+}
+
+.first .unlimited .signup{
+    flex-direction: column;
+}
+
+.first .unlimited .signup input{
+    min-width: 400px;
+    margin-bottom: 20px;
+}
+
+.first .unlimited .signup a{
+    min-width:50px;
+}  
+
+.second{
+    flex-direction: column;
+    padding: 2rem 1rem;
+    
+}
+
+.second .enjoy{
+    width: 80%;
+    margin: 20px 0 30px 0;
+}
+
+.second .enjoy h1{
+    font-size: 3.2rem;
+    letter-spacing: 1.5px;
+    padding-bottom: 5px;
+}
+
+.second .enjoy p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.second .tv-container img{
+    max-width: 80%; 
+}
+.second .tv-container video{
+left: 10rem;
+top: rem;
+width: 48%;
+z-index: -1;
+}
+}
