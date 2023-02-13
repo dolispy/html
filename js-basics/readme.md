@@ -17,13 +17,13 @@
 <b>How do you log to the console?</b>
 <br>console.log('This is how you log to the console');
 
-<b>List the tech fields that use JavaScript, for example FrontEnd.</b>
+<b>List the tech fields that use JavaScript, for example FrontEnd?</b>
 <ul>
 <li>FrontEnd</li>
 <li>BackEnd</li>
 <li>Mobile Development</li>
 <li>UI/UX Designer</li>
-<li>Web Application Developer</li>
+<li>Web Application Developer </li>
 </ul>
 
 <b>Differentiate between Statically typed and Dynmaically typed programming languages and give examples of languages that fall under each category</b>
