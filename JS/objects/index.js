@@ -1,4 +1,4 @@
-//Using the constructor method, create an InstagramPost() constructor function that takes the properties below as arguments.
+// Using the constructor method, create an InstagramPost() constructor function that takes the properties below as arguments.
 
 function instagramPost (authorHandle, content, imageLink, noOfViews, noOfLikes){
     this.authorHandle = authorHandle,
